@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
    <link href="style.css" type="text/css" rel="stylesheet">
    <link href="images.jpeg" rel="icon">
    
 </head>
 <body>
-<center><h1><font size="10" color="red">MEPTUBE</font></h1></center>
-<div class="row">
+<center><font size="50" color="red">MEPTUBE</font></center>
+
+
+
+<div id="main" style="margin-left: 0px;">
+  <button class="openbtn" onclick="openNav()">☰</button></div>
+
+<div class="topnav">
+  
+  
+  
+  
+<input type="text" placeholder="Search.."></div><div class="row">
    <div class="column">
-      <video controls>
+      <video controls="">
          <source src="mov_bbb.mp4" type="video/mp4">
          <source src="mov_bbb.ogg" type="video/ogg">     
          Your browser does not support HTML5 video.
       </video>
      </div>
    <div class="column">
-      <video  controls>
+      <video controls="">
          <source src="mov_bbb.mp4" type="video/mp4">
          <source src="mov_bbb.ogg" type="video/ogg">     
          Your browser does not support HTML5 video.
       </video>
    </div>
    <div class="column">
-      <video  controls>
+      <video controls="">
          <source src="mov_bbb.mp4" type="video/mp4">
          <source src="mov_bbb.ogg" type="video/ogg">     
          Your browser does not support HTML5 video.
@@ -32,30 +42,30 @@
  </div>
  <div class="column">
    <div class="row">
-      <video  controls>
+      <video controls="">
          <source src="mov_bbb.mp4" type="video/mp4">
          <source src="mov_bbb.ogg" type="video/ogg">     
          Your browser does not support HTML5 video.
       </video>
      </div>
    <div class="row">
-      <video  controls>
+      <video controls="">
          <source src="mov_bbb.mp4" type="video/mp4">
          <source src="mov_bbb.ogg" type="video/ogg">     
          Your browser does not support HTML5 video.
       </video>
    </div>
    <div class="row">
-      <video  controls>
+      <video controls="">
          <source src="mov_bbb.mp4" type="video/mp4">
          <source src="mov_bbb.ogg" type="video/ogg">     
          Your browser does not support HTML5 video.
       </video>
    </div>
  </div>
- <div class=column>
+ <div class="column">
    <div class="row">
-      <video width="610" controls>
+      <video controls="" width="610">
          <source src="mov_bbb.mp4" type="video/mp4">
          <source src="mov_bbb.ogg" type="video/ogg">     
          Your browser does not support HTML5 video.
@@ -63,7 +73,103 @@
     </div>
    </div>
    
- </div>
-</body>
-</html>
+   
+   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
 
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+
+
+
+<div id="mySidebar" class="sidebar" style="width: 0px;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+   
+ 
+
+
+
+<style type="text/css"></style>
+
+
+</body></html>
